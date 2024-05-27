@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(assets/fonts/Poppins-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url(assets/fonts/Poppins-ExtraBold.ttf) format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+.mainContent {
+  display: block;
+  margin-left: 36rem;
+  margin-top: 10rem;
+  background-color: hsl(0, 0%, 100%);
+  width: 70vh;
+  height: 50vh;
+  border-bottom-right-radius: 10rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding-top: 2rem;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  font-family: "Poppins-Bold";
+}
+
+.day {
+  display: flex;
+  width: 13vh;
+  position: relative;
+  padding: 15px 15px 15px 15px;
+  font-size: 1.4rem;
+  border-radius: 0.6rem;
+  right: 2rem;
+  top: 1rem;
+  border-color: 1px solid rgba(168, 155, 155, 0.233);
+}
+.month {
+  display: flex;
+  position: relative;
+  font-size: 1.4rem;
+  right: 7rem;
+  width: 13vh;
+  padding: 15px 15px 15px 15px;
+  top: 1rem;
+  border-radius: 0.6rem;
+  border-color: 1px solid rgba(168, 155, 155, 0.233);
+}
+.year {
+  display: flex;
+  position: relative;
+  font-size: 1.4rem;
+  right: 10rem;
+  width: 13vh;
+  top: 1rem;
+  padding: 15px 15px 15px 15px;
+  border-radius: 0.6rem;
+  border-color: 1px solid rgba(168, 155, 155, 0.233);
+}
+.form .dayLabel {
+  position: relative;
+  bottom: 1rem;
+  left: 2rem;
+}
+.form .monthLabel {
+  position: relative;
+  bottom: 1rem;
+  right: 2rem;
+}
+.form .yearLabel {
+  position: relative;
+  bottom: 1rem;
+  right: 5rem;
+}
+.ageCalculator hr {
+  width: 55vh;
+  position: relative;
+  left: 2rem;
+}
+.day:hover {
+  border-color: hsla(259, 100%, 65%, 0.574);
+}
+.month:hover {
+  border-color: hsla(259, 100%, 65%, 0.574);
+}
+.year:hover {
+  border-color: hsla(259, 100%, 65%, 0.574);
+}
+.arrowBtn {
+  position: relative;
+  left: 35rem;
+  bottom: 2rem;
+  border-radius: 3rem;
+  border-color: transparent;
+  background-color: black;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+.results {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.results p {
+  position: relative;
+  bottom: 2rem;
+  padding-left: 2rem;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  font-family: "Poppins-ExtraBold";
+}
+.resultYear {
+  color: hsl(259, 100%, 65%);
+  padding-right: 1rem;
+}
+.resultMonth {
+  color: hsl(259, 100%, 65%);
+  padding-right: 1rem;
+}
+.resultDay {
+  color: hsl(259, 100%, 65%);
+  padding-right: 1rem;
+}
+/* Responsiveness for smaller screens */
+@media screen and (max-width: 480px) {
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centralizar itens horizontalmente */
+    justify-content: center; /* Centralizar itens verticalmente */
+    margin: 7rem auto;
+    background-color: hsl(0, 0%, 100%);
+    width: 120%;
+    margin-left: 6.6rem;
+    padding: 10px 10px 10px 10px;
+    height: 80vh;
+    border-radius: 2rem;
+    border-bottom-right-radius: 10rem;
+    padding: 5rem;
+  }
+
+  .form {
+    display: flex;
+    position: relative;
+    bottom: 1rem;
+    gap: 1.5rem;
+    flex-direction: row;
+    align-items: center; /* Centralizar itens horizontalmente */
+    justify-content: center; /* Centralizar itens verticalmente */
+    margin-bottom: 2rem;
+    margin-left: 8rem;
+    font-family: "Poppins-Bold";
+  }
+  .ageCalculator hr {
+    margin-left: 8rem;
+    position: relative;
+    top: 1rem;
+    width: 35%;
+  }
+  .arrowBtn {
+    padding: 2px 2px 2px 2px;
+    cursor: pointer;
+    position: relative;
+    top: 0.1rem;
+    left: 25rem;
+  }
+  .day,
+  .month,
+  .year {
+    font-size: 1rem; /* Adjust font-size for even smaller screens */
+  }
+
+  .day:hover {
+    border-color: hsla(259, 100%, 65%, 0.574);
+  }
+  .month:hover {
+    border-color: hsla(259, 100%, 65%, 0.574);
+  }
+  .year:hover {
+    border-color: hsla(259, 100%, 65%, 0.574);
+  }
+  .results p {
+    margin-left: 10rem;
+    font-size: 3rem; /* Adjust font-size for even smaller screens */
+    line-height: 4rem; /* Adjust line-height for even smaller screens */
+    position: relative;
+    top: 2rem;
+  }
+}

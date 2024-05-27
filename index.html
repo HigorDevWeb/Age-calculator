@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
+  <script src="index.js" defer></script>
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main>
+    <div class="mainContent">
+      <div class="ageCalculator">
+        <form class="form">
+          <label for="day" class="dayLabel">DAY</label>
+          <input type="number" name="day" class="day" placeholder="DD" />
+          <label for="month" class="monthLabel">MONTH</label>
+          <input type="number" name="month" class="month" placeholder="MM" />
+          <label for="year" class="yearLabel">YEAR</label>
+          <input type="number" name="year" class="year" placeholder="YYYY" />
+        </form>
+        <hr />
+        <button class="arrowBtn"><img src="assets/images/icon-arrow.svg" alt="" /></button>
+        <div class="results">
+          <p><span class="resultYear"></span> years</p>
+          <p><span class="resultMonth"></span> months</p>
+          <p><span class="resultDay resultRemainingDays"></span> days</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
